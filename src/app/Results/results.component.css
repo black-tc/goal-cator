@@ -1,0 +1,76 @@
+table {
+    width: 100%;
+  }
+
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  td, th {
+    width: 25%;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+  }
+
+  .landing-pic{
+    background: url('../../assets/6de047907e02a55e-.gif');
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    margin-top: 10px;
+  }
+
+  .landing-pic1{
+    background: url('../../assets/75b2d6f04c17eded83168fba6dc88206.gif');
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    margin-top: 10px;
+  }
+
+  .points{
+    padding-top: 10rem;
+
+  }
+
+  .background {
+  /* padding-top: 5rem !important; */
+  background: rgb(255,255,255);
+  background: linear-gradient(48deg, rgba(255,255,255,1) 27%, rgba(255,255,255,1) 55%, rgba(255,255,255,1) 55%,rgba(255,255,255,1) 85%, rgba(63, 61, 86, 1) 85%);
+  background-size: cover;
+  }
+
+  .btn-primary {
+    font-size: 1rem;
+    background-color: #3F3D56 !important;
+    text-align: center !important;
+  }
+
+  .btn-primary:hover {
+    border-color: #534bae !important;
+    background-color: #534bae !important;
+
+  }
+
+  .get {
+    width: 32%;
+    margin: 0 auto;
+    display: inline-flex;
+    justify-content: space-around;
+  margin-top: 35px;
+  margin-left: 10%;
+
+  }

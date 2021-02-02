@@ -1,0 +1,99 @@
+.bg-left{
+    background-color: #fff;
+    background-image: url('src/assets/undraw_processing_thoughts_d8ha.svg');
+    background-repeat: no-repeat ;
+    background-size: contain;
+    background-position: center;
+    background-size: 500px;
+}
+.bg-right{
+  background-color: #343a40;
+  padding-top: 100px;
+  /* position: absolute; */
+
+}
+
+.border-warning{
+  border-color: #564FCC !important;
+}
+
+.btn[type=submit]{
+    border-radius:50px;
+    background-color: #3F3D56;
+    color: #fff;
+
+}
+.alert{
+    padding: 1px;
+}
+.border-right{
+    border: 1px solid;
+}
+
+  #nav_edit li a{
+    text-decoration: none;
+    outline: none;
+    /* font-size: 2rem; */
+    font-weight: 600;
+    color:  white;
+    clear:both;
+    padding: 10px;
+    margin:2px;
+  }
+
+  #nav_edit li a:hover{
+    color: #bdbdbd;
+  }
+  .form-control:focus {
+    border-color: rgb(86, 79, 204);
+    box-shadow: inset 0 0.5px 0.5px rgba(0, 0, 0, 0.075), 0 0 5px rgba(86, 79, 204, 1);
+  }
+
+  @media only screen and (max-width: 600px) {
+    .bg-right{
+    background: linear-gradient(326deg, rgba(78, 84, 155, 1) 8%, rgba(78, 84, 155, 1) 13%, rgba(255,255,255,1) 13%, rgb(255, 255, 255) 77%, rgba(78, 84, 155, 1) 77%, rgba(78, 84, 155, 1) 93%, rgba(78, 84, 155, 1) 93%);
+    background-repeat: no-repeat ;
+    background-size: contain;
+    background-position: center;
+    padding-top: 150px;
+
+    }
+    u{
+      color:rgb(0, 0, 0);
+    }
+    i.fa-key::before{
+      color: black;
+    }
+    .text-white{
+      color:rgb(20, 20, 20)!important
+    }
+
+    .border-warning{
+      border-color: #564FCC !important;
+    }
+
+    #nav_edit li a{
+      text-decoration: none;
+      outline: none;
+      font-size: 2rem;
+      font-weight: 600;
+      color:  black;
+      clear:both;
+      padding: 10px;
+      margin:2px;
+    }
+
+}
+
+@media only screen and (min-width: 700px) {
+  .bg-right{
+    background-color: #343a40;
+    padding-top: 10px;
+    /* position: absolute; */
+    overflow: visible;
+    width: 66px;
+    height: 400px;
+    left: 72px;
+    top: 120px;
+  }
+}

@@ -1,0 +1,112 @@
+<div class="container-fluid  h-100">
+    <div class="row h-100">
+    <!--divisions starts-->
+        <!--left division-->
+        <!-- -->
+        <div class="col-md-5 d-none d-md-block bg-left">
+
+        </div>
+        <!--left division end-->
+        <!-- right division-->
+        <div class="col-md-7 bg-right">
+            <div class="container d-flex justify-content-center">
+                <div class="card text-white border-0 bg-transparent">
+                    <!--card body starts-->
+                    <div class="card-body">
+
+
+
+                            <div class="card-title text-center h5">
+                                <ul class="nav justify-content-center " id="nav_edit">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-muted" routerLink="/login"><i class="fa fa-key p-2"></i>Sign in</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link " routerLink="/signup"><i class="fa fa-lock p-2"></i><u>Sign up</u></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        <h5 class="mb-3">
+                           <span>Welcome <i>{{ myForm.controls['name'].value | capitalize}}, </i></span>
+                        </h5>
+                        <!--form starts -->
+                        <div class="card-text">
+                            <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+
+                                <div class="form-group">
+                                  <input type="text" class="form-control"
+                                  [formControl]="myForm.controls['name']"
+                                  placeholder="Enter full name">
+                              </div>
+                              <!--validation div for company-->
+                              <div class="alert alert-danger"
+                              *ngIf="(!myForm.controls['name'].valid )
+                              && (myForm.controls['name'].touched) ">
+                                      A full name is required
+                              </div>
+                              <div class="form-group">
+                                <input type="number" class="form-control"
+                                [formControl]="myForm.controls['contanctNumber']"
+                                placeholder="Contact Number" >
+
+                            </div>
+                            <div class="alert alert-danger"
+                              *ngIf="(!myForm.controls['contanctNumber'].valid )
+                              && (myForm.controls['contanctNumber'].touched) ">
+                                      A contact number is required
+                              </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control"
+                                    [formControl]="myForm.controls['email']"
+                                    placeholder="Enter email">
+                                </div>
+                                <!--validation div for email-->
+                                <div class="alert alert-danger"
+                                *ngIf="(!myForm.controls['email'].valid )
+                                && (myForm.controls['email'].touched) ">
+                                        A valid email is required
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control"
+                                    [formControl]="myForm.controls['password']"
+                                    placeholder="Password" >
+
+                                </div>
+                                <!--validation div for password-->
+                                <div class="alert alert-danger"
+                                *ngIf="(!myForm.controls['password'].valid ) && (myForm.controls['password'].touched) ">
+                                       Password should be atlest 8 character long
+                                </div>
+
+                                <div class="form-group">
+                                        <input type="password" class="form-control"
+                                        [formControl]="myForm.controls['confirmPassword']"
+                                        placeholder="Confirm Password" >
+                                </div>
+                                <!--validation div for confirm password-->
+                                <div class="alert alert-danger"
+                                *ngIf="(!myForm.controls['confirmPassword'].valid ) && (myForm.controls['confirmPassword'].touched) ">
+                                       confirm password doesn't match
+                                </div>
+                                <button type="submit" class="btn btn-block btn-outline-secondary" [disabled]="!myForm.valid" >Sign Up</button>
+                            </form>
+                        </div>
+                        <!--error handler-->
+                        <div class="alert alert-success mt-2" *ngIf="message.length >0">
+                            {{ message }}
+                        </div>
+                        <div class="alert alert-danger mt-2" *ngIf="userError">
+                            {{ userError.message }}
+                        </div>
+                        <!--form ends -->
+                    </div>
+                    <!--card body ends-->
+                </div>
+            </div>
+        </div>
+        <!-- right division-->
+    <!--divisions end-->
+    </div>
+</div>
+<!---->

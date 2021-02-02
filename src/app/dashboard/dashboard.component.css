@@ -1,0 +1,39 @@
+.background{
+    background: rgb(63, 61, 86);
+    background: linear-gradient(120deg, rgba(63, 61, 86, 1) 7%, rgba(255,255,255,1) 7%, rgba(250,250,250,1) 50%, rgba(63, 61, 86, 1) 50%);
+    background-size: cover;
+
+}
+.bg-img{
+    background-image: url('/assets/undraw_location_search_bqps.svg');
+    background-repeat: no-repeat ;
+    background-size: contain;
+    background-position: center;
+    height: 400px;
+}
+.form-control:focus {
+    border-color: rgb(63, 61, 86);
+    box-shadow: inset 0 1px 1px rgba(63, 61, 86, 1), 0 0 8px rgba(63, 61, 86, 1);
+  }
+  agm-map {
+    height: 500px;
+  }
+
+  .border-primary{
+    border-color: #3F3D56 !important;
+  }
+
+  .footer{
+    background-color: #3F3D56;
+    min-height:50px;
+    padding-top:10px;
+    width: 100%;
+    bottom: 0;
+    /* color: #fff !important; */
+
+  }
+
+  .bg-warning {
+    background-color: #3F3D56 !important;
+    color: #ffffff;
+  }

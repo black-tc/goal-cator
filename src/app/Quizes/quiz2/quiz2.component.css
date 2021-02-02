@@ -1,0 +1,30 @@
+.btn {
+  width: 250px;
+  text-align: left
+}
+
+::ng-deep .mat-horizontal-stepper-header{
+  pointer-events: none !important;
+}
+
+p{
+  text-align: justify
+}
+
+.quiz {
+  padding-top: 5rem !important;
+  background: rgb(255,255,255);
+  background: linear-gradient(48deg, rgba(255,255,255,1) 27%, rgba(255,255,255,1) 55%, rgba(255,255,255,1) 55%,rgba(255,255,255,1) 85%, rgba(63, 61, 86, 1) 85%);
+  background-size: cover;
+}
+
+.btn-primary {
+  background-color: #3F3D56 !important;
+  color: #ffffff;
+  outline-color: #3F3D56 !important;
+  border-color: #3F3D56 !important;
+}
+
+.btn-block {
+  width: 80%;
+}

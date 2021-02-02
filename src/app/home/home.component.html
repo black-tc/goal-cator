@@ -1,0 +1,51 @@
+
+<div id="bg">
+    <div id="content">
+
+        <div class="container " style="padding-top:200px">
+            <div class="mx-auto p-5 text-white" id="banner_content" style="border-radius: 0.5rem;">
+              <div class="h1 text-center">Welcome to Goal-cator
+              </div>
+                <div class="h4">The Easy & Fast Way of knowing the NUST Strategic plan!
+                </div>
+                <p ></p>
+                <a class="btn btn-lg btn-outline-light rounded-pill mt-3" routerLink="/dashboard" style="margin: 0 10px 10px 0;">Play Game</a>
+                <a class="btn btn-lg btn-outline-light rounded-pill mt-3" routerLink="/login" *ngIf="!loggedIn" style="margin: 0 10px 10px 0;">Sign In</a>
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<div *ngIf="!loggedIn" class="container-fluid py-5 background">
+    <h2 class="text-center text-white"> How it Works?</h2>
+    <div class="container mt-5 text-white text-center ">
+
+            <div class="row justify-content-md-center">
+                <div class="col-md-3 m-4 ">
+                    <img src="/assets/undraw_download_pc33.svg" alt="" srcset="" class="img-fluid">
+                    <h6 class="h4 text-secondary mt-3">Select an option</h6>
+                    <p class="text-light">The player has two main options which are to read the NUST Strategic Plan online or Start the Game.</p>
+                </div>
+                <div class="col-md-3 m-4">
+                    <img src="/assets/undraw_order_confirmed_aaw7.svg " alt="" srcset="" class="img-fluid ">
+                    <h6 class="h4 text-secondary mt-3">Play Quiz Game</h6>
+                    <p class="text-light">The player upon selecting start game is redirected to the quiz page where they can start playing.</p>
+                </div>
+                <div class="col-md-3 m-4">
+                    <img src="/assets/undraw_data_report_bi6l.svg" alt="" srcset="" class="img-fluid ">
+                    <h6 class="h4 text-secondary  mt-3">View Stats</h6>
+                    <p class="text-light ">The player can view stats and see how other players are doing in terms of ranking and points. </p>
+                </div>
+
+            </div>
+    </div>
+    <div class="text-center">
+        <button class="btn btn-lg btn-outline-secondary rounded-pill mt-3 mx-auto" routerLink="/info">Learn More</button>
+
+    </div>
+</div>
+<!-- <footer class="footer">
+        <div class="container text-center"><span class="text-muted"><b>Copyright&copy;Goal-cator | All Rights Reserved | Contact Us: +0000 00000</b></span></div>
+</footer> -->

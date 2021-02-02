@@ -1,0 +1,17 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+  // users data can be writen to users collection after they have been authenticated
+  // users can only edit and delete their own data in the collection
+   match	/users/{userId}/{doc=**} {
+     allow create: if request.auth.uid != null;
+     allow update, delete, read: if request.auth.uid == userId;
+   }
+   
+   match /temperatures/{tempId}/{document=**}{
+   	allow create, read: if request.auth.uid != null;
+    allow update: if request.auth.uid == tempId;
+   }
+   
+  }
+}

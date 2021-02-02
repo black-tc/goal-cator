@@ -1,0 +1,121 @@
+<div class="setback " *ngIf="(mode == 0)">
+    <div class="container rounded bg-light mb-5">
+        <h1 class="text-center">Terms & Conditions</h1><hr><br>
+        <h3 class="sideHead">Terms of Service</h3><br>
+        <ul>
+                By using the Goal-cator Platform, you are agreeing to comply with and be bound by the Terms of Service.<br><br>
+                Your use of the Goal-cator Platform is subject to the Terms of Service, which may be updated from time to time without notice to you.<br><br>
+                Your acceptance of the Terms of Service is valid, binding and constitutes the entire agreement between us (irrespective of whether you are a user of or visitor to the Goal-cator Platform).The Terms of Service supersedes all prior or contemporaneous agreements, representations, warranties and understandings with respect to the Goal-cator Platform, and the services that are provided to you through the Goal-cator Platform.<br><br>
+
+
+                These terms of services apply to all users which use Goal-cator web and its integrated systems. Users in this context shall Goal-cator service partners including its owners, managers and staff members, and actual end users who use Goal-cator web to keep the attendace record to help in contact tracing.<br><br>
+                By using this web, completing the registration process, you clearly agree and acknowledge that you have reviewed these terms of service, given consent and accepted this agreement. References in these Terms to "we" or "us" or "web" or "company" are references to Goal-cator web and "you" as user/users of Goal-cator web and its integrated systems.<br><br>
+                <hr>
+            </ul> <br>
+        <h3 class="sideHead">Prohibited Activities</h3><br>
+        <ul>
+                You agree not to use the Goal-cator Platform for illegal, harmful, misleading, fraudulent or other malicious purposes or to disseminate or communicate any unlawful, defamatory, obscene, lewd, excessively violent, harassing, sexually explicit or otherwise objectionable subject matter or that which infringes or may infringe intellectual property or other rights of another. You agree not to use the Services for the transmission of "junk mail", "spam", "chain letters", "phishing" or unsolicited mass distribution of email. You agree to indemnify us for any liability on us which may arise due to your misuse of the Goal-cator Platform.<br><br>
+                Despite these prohibitions, content/data sent by other users of the Goal-cator Platform may contain inaccurate, inappropriate, offensive or sexually explicit material, and we assume no responsibility or liability for this material. <br><br>
+                Without assuming any obligation to do so, suspend any account associated with it, that we have reasonable grounds to believe violates the Terms of Service, any applicable law, or that may be offensive or illegal, or violate the rights, harm, or threaten the safety of any person. <br><br>
+                <hr>
+        </ul>
+        <div class="text-center">
+                <button class="btn btn-lg btn-outline-danger mx-auto rounded-pill mt-3"(click)="change();">{{ mode2 }}</button>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="setback" *ngIf="(mode == 1)">
+            <div class="container rounded bg-light">
+                    <h1 class="text-center">About Goal-cator</h1><hr>
+                    <h3 class="sideHead"></h3><br>
+                    <ul class="text-center">
+                                    Who to call when ever you need more info, queries or feedback? Here are a few numbers to dial.<br><br>
+
+                                    <hr>
+                    </ul>
+
+                    <div class="row">
+                            <div class="col-sm-6 col-md-3 rounded cards text-center">
+                                    <h4  class="text-center">Client</h4>
+                                    Ms. Vivette Rittmann<br>
+                                    Cell:  +264 00000000<br>
+                                    Email: vrittmann@nust.na<br>
+
+                            </div>
+                            <div class="col-sm-6 col-md-3 rounded cards text-center">
+                                    <h4 class="text-center">NUST</h4>
+                                    13 Jackson Kaujeua Street, Windhoek, Namibia<br>
+                                    Switchboard: +264-61-207-9111<br>
+                                    Email: ictsupport@nust.na<br>
+
+                            </div>
+                            <div class="col-sm-6 col-md-3 rounded cards text-center">
+                                    <h4  class="text-center">Department of Institutional Planning</h4>
+                                    Ms. Neavera Tjivikua<br>
+                                    Tell: +264 61 207 2015<br>
+                                    Email: ntjivikua@nust.na<br>
+
+                            </div>
+                            <div class="col-sm-6 col-md-3 rounded cards text-center">
+                                    <h4 class="text-center">Goal-cator Support Team</h4>
+                                    Ms. Toini Jonas<br>
+                                    Cell: +264 814390765<br>
+                                    Email: jonastoini2@gmail.com<br>
+
+                            </div>
+                    </div>
+                    <hr>
+                    <ul class="text-center">
+                     More about the first of its kind NUST quiz game, the <strong>Goal-cator</strong>! The FAQ<br><br>
+
+
+      </ul>
+
+                    <div class="row">
+
+                            <div class="col-sm-6 rounded" style="padding: 20px;">
+                                    <div class="val rounded" (click)="change1('0')">
+                                            What is Goal-cator?
+                                    </div>
+                                    <div class="val rounded" (click)="change1('1')">
+                                            Why Goal-cator?
+                                    </div>
+                                    <div class="val rounded" (click)="change1('2')">
+                                            Is Goal-cator free?
+                                    </div>
+                            </div>
+                            <div class="col-sm-6 rounded" style="padding: 20px;border: solid 2px #3F3D56;">
+                                    <div class="commit val1" *ngIf="(mode1 == 0)">
+                                            <h4 class="text-center">What is Goal-cator?</h4>
+                                            Goal-cator is a fully customized game designed as a problem solution as per requirement of our final year Software Engineering 2 assignment meant to solve a problem currently being faced by NUST. Part of the solution is to create awareness and the other part is to come up with a game that will help stakeholders to learn more about the NUST strategic plan and to understand the strategic direction of the plan and this.....this is <strong>GOAL-CATOR</strong>. Derived from the two important words in this project, <i>goal</i> and <i>indicator</i>.
+                                    <br>
+                                    <br>
+                                    Designed and developed by:
+                                    Toini Jonas
+                                    <p>Student Number: 217089135</p>
+                                          </div>
+                                    <div class="vision val1" *ngIf="(mode1 == 1)">
+                                            <h4 class="text-center">Why Goal-cator?</h4>
+                                            Namibia university of Science and Technology (NUST) want to create awareness about the strategic direction of the
+                                            university. The university has a guiding document called strategic plan in which all goals and the key performance
+                                            indicators (KPI) are outlined. The university community and the public do not effectively read and get to know the
+                                            plan. In an effort to encourage the public to engage the plan more, the department of institutional planning
+                                            approached me with an idea of gamifying the plan. Goal-cator fits and suit all the requirements specified which include and not limited to;
+                                            will assist the stakeholders to learn
+                                            more about the plan and get to memorize and understand the strategic direction of the plan.
+                                    </div>
+                                    <div class="misson val1" *ngIf="(mode1 == 2)">
+                                            <h4 class="text-center">Is Goal-cator free?</h4>
+                                            Goal-cator is free to all NUST stakeholders as the main reason of the game is to promote awareness of the NUST strategic plan, which is available for free and you can find it <a href="https://www.nust.na/sites/default/files/documents/NUST%20Strategic%20Plan%204.pdf">here</a>.
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="text-center">
+                            <button class="btn btn-lg btn-outline-danger mx-auto rounded-pill mt-3"(click)="change();">{{ mode2 }}</button>
+                    </div>
+
+            </div>
+
+    </div>

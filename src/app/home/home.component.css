@@ -1,0 +1,33 @@
+#bg{
+  background-image: url('https://media.istockphoto.com/photos/3d-render-glowing-lines-tunnel-neon-lights-virtual-reality-abstract-picture-id1033058622?b=1&k=6&m=1033058622&s=612x612&w=0&h=_S0bzCxxTqO18RPcv_ozvf2aja5m1wHuwQbqB0iknTo=');
+
+  background-repeat: no-repeat;
+  /* min-height:600px; */
+  width: 100vw;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size:cover;
+  text-align: center;
+
+}
+#banner_content {
+  background-color: rgba(0, 0, 0, 0.7);
+
+}
+.background{
+  background-image: linear-gradient( 135deg, #070713 0%, #0d0d26 48%, #000000 100% );
+}
+.footer{
+  background-color: #141414;
+  min-height:150px;
+  padding-top:40px;
+  width: 100%;
+  bottom: 0;
+
+}
+
+.btn-warning {
+background-color: #534bae;
+border-color: #534bae;
+}

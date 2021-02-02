@@ -1,0 +1,53 @@
+<section class="background">
+<div *ngIf="madeIt" class="col-md-6" style="min-height: 100vh; float: right;">
+  <div class="landing-pic d-none d-lg-block d-xl-block"></div>
+</div>
+<div *ngIf="!madeIt" class="col-md-6" style="min-height: 100vh; float: right;">
+  <div class="landing-pic1 d-none d-lg-block d-xl-block"></div>
+</div>
+<section class="points">
+
+<div class="col-md-12" >
+    <div class="col-md-6">
+        <div class="center">
+          <h4><strong>{{this.status}}</strong></h4>
+          <br>
+            <h4>You got: <strong>{{this.filtered_points}}</strong></h4>
+            <mat-progress-bar [mode]="this.mode" [value]="this.progress_points" [color]="this.progress_color">
+            </mat-progress-bar>
+            <br>
+            <hr class="" />
+      <a routerLink="/quiz-level1" class="btn get btn-primary btn-lg " role="button"
+        ><strong>Retry</strong></a
+      >
+      <a *ngIf="madeIt" routerLink="/quiz-level2" class="btn get btn-primary btn-lg " role="button"
+      ><strong>Next level</strong></a
+    >
+    <hr class="" />
+    <p>Sign in to see how others are doing!</p>
+    <button *ngIf="!isAuthenticated()" routerLink="/mentors-welcome" class="btn get btn-primary btn-lg " role="button"
+      ><strong>Sign in</strong></button
+    ><br>
+    <small *ngIf="!isAuthenticated()">Don't have an account? <a routerLink="/signup">Sign up</a></small>
+    <app-standings *ngIf="isAuthenticated()"></app-standings>
+    <br>
+    <br>
+        </div>
+    </div>
+    <div class="col-md-6" *ngIf="isAuthenticated()">
+        <!-- <app-register></app-register> -->
+    </div>
+    <div class="col-md-6" *ngIf="!isAuthenticated()">
+        <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    </div>
+</div>
+
+<div class="col-md-12" *ngIf="!isAuthenticated()">
+    <!-- <mat-progress-bar mode="indeterminate"></mat-progress-bar> -->
+    <!-- <h3>Sign in for more</h3> -->
+</div>
+
+
+</section>
+
+</section>

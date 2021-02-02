@@ -1,0 +1,14 @@
+.btn-outline-warning{
+    border-radius: 50px;
+    width: 10rem;
+    border-color:   #fff !important;
+}
+.shadow-bg{
+    text-shadow: 1px 1px 3px #000000;
+}
+
+.brand {
+  /* color: linear-gradient( 135deg, #070713 0%, #0d0d26 48%, #000000 100% ); */
+  color: #fff;
+}
+

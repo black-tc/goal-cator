@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Covid-tracker": {
+    "Goal-cator": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -68,18 +68,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Covid-tracker:build"
+            "browserTarget": "Goal-cator:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Covid-tracker:build:production"
+              "browserTarget": "Goal-cator:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Covid-tracker:build"
+            "browserTarget": "Goal-cator:build"
           }
         },
         "test": {
@@ -116,16 +116,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Covid-tracker:serve"
+            "devServerTarget": "Goal-cator:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Covid-tracker:serve:production"
+              "devServerTarget": "Goal-cator:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "Covid-tracker"
+  "defaultProject": "Goal-cator"
 }
